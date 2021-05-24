@@ -185,7 +185,6 @@ p {
 
 .arrow1 {
   position: absolute;
-  /*--imp..// position is imp mn 3'eeri eldiv msh hyzhar//*/
   top: 50%;
   left: 0;
   border-bottom: none;
@@ -196,7 +195,6 @@ p {
 
 .arrow2 {
   position: absolute;
-  /*--imp..// position is imp mn 3'eeri eldiv msh hyzhar//*/
   top: 55.4%;
   left: 0;
   transition: all 0.5s ease;
@@ -571,17 +569,15 @@ p {
   width: 9%;
 }
 
-.w-10 {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-}
-
 #blog h3 {
   font-size: 16px;
   font-weight: 600;
 }
-
+#blog img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
 #blog span {
   color: #666;
   font-size: 14px;
@@ -595,7 +591,12 @@ p {
   margin: auto;
   padding-top: 30px;
 }
-
+#blog .carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #f25454;
+}
 /* mediaQuery */
 
 @media screen and (max-width:599px) {
@@ -703,15 +704,10 @@ p {
   background-color: rgba(242, 84, 84, 0.7);
   border-color: rgba(242, 84, 84, 0.7);
 }
-
-input[type=text]:focus{
-  outline: 4px solid #f25454 ;   
-  /* oranges! yey */
+.form-control:focus{
+  border-color:#f25454 ;
+  box-shadow: none;
 }
-input[type=email]:focus{
-  outline: 4px solid #f25454;     /* oranges! yey */
-}
-
 /* mediaQuery */
 
 @media screen and (max-width:599px) {
